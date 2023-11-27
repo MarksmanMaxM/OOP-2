@@ -23,12 +23,11 @@ public class Main {
         Bicycle bicycle2 = new Bicycle(modelName5, wheelsCount5);
 
 
-        ServiceStation station = new ServiceStation();
-        station.check(car, null, null);
-        station.check(car2, null, null);
-        station.check(null, bicycle, null);
-        station.check(null, bicycle2, null);
-        station.check(null, null, truck);
-        station.check(null, null, truck2);
+        car.check(car);
+        car2.check(car2);
+        bicycle.check(bicycle);
+        bicycle2.check(bicycle2);
+        truck.check(truck);
+        truck2.check(truck2);
     }
 }
